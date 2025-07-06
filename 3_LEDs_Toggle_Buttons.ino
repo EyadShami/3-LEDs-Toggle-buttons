@@ -6,7 +6,7 @@ int lastButton[3];                        // previous button reading
 
 void setup() {
   for (int i = 0; i < 3; i++) {
-    pinMode(ledPins[i],    OUTPUT);       // LED pins set to output
+    pinMode(ledPins[i], OUTPUT);       // LED pins set to output
     pinMode(buttonPins[i], INPUT);        // enable input pins
     digitalWrite(ledPins[i], LOW);        // start all LEDs OFF
     lastButton[i] = digitalRead(buttonPins[i]);
